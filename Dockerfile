@@ -18,7 +18,7 @@ RUN apk add --no-cache  \
     chromium-chromedriver
 RUN $PYTHON -m pip install selenium
 
-RUN useradd -d $HOME -u $UID $USER
+RUN add -d $HOME -u $UID $USER
 USER $USER
 WORKDIR $HOME
 CMD ["bash"]
