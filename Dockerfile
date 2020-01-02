@@ -11,7 +11,7 @@ ARG PYTHON=python
 
 #RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 #RUN sed -i "s/deb.debian.org/$APT_MIRROR/" /etc/apt/sources.list
-RUN add --no-cache  \
+RUN apk add --no-cache  \
     py-pip  \
     curl \
     wget \
